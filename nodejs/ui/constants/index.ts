@@ -1,2 +1,2 @@
 export const APP_NAME = 'Blog';
-export const API_BASE_URL = 'https://653da91b-b096-4dbe-933c-0ea1ed02b1f5.mock.pstmn.io';
+export const API_BASE_URL = 'https://7754d63e-49d9-40fd-bc17-142a034bd590.mock.pstmn.io'; //mockserver

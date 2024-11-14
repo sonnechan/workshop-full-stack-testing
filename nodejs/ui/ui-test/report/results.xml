@@ -1,0 +1,49 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="10.385955">
+<testsuite name="blog.list.spec.js" timestamp="2024-11-14T10:28:40.894Z" hostname="chromium" tests="1" failures="1" skipped="0" time="8.804" errors="0">
+<testcase name="Working with mock network" classname="blog.list.spec.js" time="8.804">
+<failure message="blog.list.spec.js:4:1 Working with mock network" type="FAILURE">
+<![CDATA[  [chromium] › blog.list.spec.js:4:1 › Working with mock network ───────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveText(expected)
+
+    Locator: getByTestId('blog-list-item').locator('//a/h1')
+    Expected string: "Mock Blog from playwright test 01"
+    Received: <element(s) not found>
+    Call log:
+      - expect.toHaveText with timeout 5000ms
+      - waiting for getByTestId('blog-list-item').locator('//a/h1')
+
+
+      34 |   await expect(page).toHaveTitle("Home — Demo");
+      35 |
+    > 36 |   await expect(page.getByTestId("blog-list-item").locator("//a/h1")).toHaveText(
+         |                                                                      ^
+      37 |     "Mock Blog from playwright test 01"
+      38 |   );
+      39 |   await expect(page.getByTestId("blog-list-item").locator("//a/p")).toHaveText(
+
+        at /Users/sunny.thanchanok/DEV/fsatraining/Untitled/workshop-full-stack-testing/nodejs/ui/ui-test/tests/blog.list.spec.js:36:70
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/blog.list-Working-with-mock-network-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/blog.list-Working-with-mock-network-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/blog.list-Working-with-mock-network-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/blog.list-Working-with-mock-network-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/blog.list-Working-with-mock-network-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
